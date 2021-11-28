@@ -1,5 +1,4 @@
 [![GitHub stars](https://img.shields.io/github/stars/beauwilliams/fzf-cht.sh.svg?style=social&label=Star)](https://GitHub.com/beauwilliams/fzf-cht.sh/stargazers/)
-[![Requires](https://img.shields.io/badge/requires-nvim%200.5%2B-9cf?logo=neovim)](https://neovim.io//)
 [![GitHub contributors](https://img.shields.io/github/contributors/beauwilliams/fzf-cht.sh.svg)](https://GitHub.com/beauwilliams/fzf-cht.sh/graphs/contributors/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 [![GitHub issues](https://img.shields.io/github/issues/beauwilliams/fzf-cht.sh.svg)](https://GitHub.com/beauwilliams/fzf-cht.sh/issues/)
