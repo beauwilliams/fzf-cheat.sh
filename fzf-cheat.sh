@@ -13,7 +13,7 @@ fi
 
 
 #Select a cht.sh cheat from the list
-selected=`cat $CHT_SH_LIST_CACHE | fzf --reverse --height 75% --border -m --ansi --nth 2..,.. --prompt='CHT.SH> ' --preview='curl -s cht.sh/{-1}' --preview-window=right:60%`
+selected=`cat $CHT_SH_LIST_CACHE | fzf --reverse --height 75% --border -m --ansi --nth 2..,.. --prompt='CHEAT.SH> ' --preview='curl -s cht.sh/{-1}' --preview-window=right:60%`
 if [[ -z $selected ]]; then
     exit 0
 fi
