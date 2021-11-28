@@ -1,8 +1,11 @@
+CHT_SH_LIST_CACHE_DIR=$HOME/'.cache/'
 CHT_SH_LIST_CACHE=$HOME/'.cache/cht_sh_cached_list'
-
 
 #Cache the list on first run
 if [ ! -f "$CHT_SH_LIST_CACHE" ]; then
+    if [ ! -d "$CHT_SH_LIST_CACHE_DIR" ]; then
+        mkdir $CHT_SH_LIST_CACHE_DIR
+    fi
     echo "First time run. Downloading cht.sh cht.sh/:list to cache..."
     curl cht.sh/:list > $CHT_SH_LIST_CACHE
 fi
