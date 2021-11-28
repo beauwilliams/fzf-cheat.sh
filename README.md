@@ -20,6 +20,8 @@
 
 # Installation
 
+*NOTE: Requires ![fzf](https://github.com/junegunn/fzf) installed to use fzf-cheat.sh*
+
 Place fzf-cheat.sh somewhere on your $PATH and make it executable
 ```bash
 curl https://raw.githubusercontent.com/beauwilliams/fzf-cheat.sh/master/fzf-cheat.sh > $PATH-LOCATION-YOUR-CHOOSING/fzf-cheat.sh
