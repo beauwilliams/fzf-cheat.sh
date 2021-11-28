@@ -25,12 +25,12 @@
 
 **Place fzf-cheat.sh somewhere on your $PATH and make it executable**
 ```bash
-curl https://raw.githubusercontent.com/beauwilliams/fzf-cheat.sh/master/fzf-cheat.sh > $PATH-LOCATION-YOUR-CHOOSING/fzf-cheat.sh
-chmod +x $PATH-LOCATION-YOUR-CHOOSING/fzf-cheat.sh
+curl https://raw.githubusercontent.com/beauwilliams/fzf-cheat/master/fzf-cheat > $PATH-LOCATION-YOUR-CHOOSING/fzf-cheat
+chmod +x $PATH-LOCATION-YOUR-CHOOSING/fzf-cheat
 ```
 
 
-**For example (easy method), install fzf-cheat.sh globally for all users by placing it in /usr/local/bin**
-```bash
-curl https://raw.githubusercontent.com/beauwilliams/fzf-cheat.sh/master/fzf-cheat.sh > /usr/local/bin/fzf-cheat.sh && chmod +x /usr/local/bin/fzf-cheat.sh
+**For example (easy method), install fzf-cheat globally for all users by placing it in /usr/local/bin**
+```b
+curl https://raw.githubusercontent.com/beauwilliams/fzf-cheat/master/fzf-cheat > /usr/local/bin/fzf-cheat && chmod +x /usr/local/bin/fzf-cheat
 ```

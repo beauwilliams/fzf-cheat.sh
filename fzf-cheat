@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 CHT_SH_LIST_CACHE_DIR=$HOME/'.cache/'
 CHT_SH_LIST_CACHE=$HOME/'.cache/cht_sh_cached_list'
 
