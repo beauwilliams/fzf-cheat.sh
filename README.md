@@ -4,7 +4,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/beauwilliams/fzf-cht.sh.svg)](https://GitHub.com/beauwilliams/fzf-cht.sh/issues/)
 [![GitHub issues-closed](https://img.shields.io/github/issues-closed/beauwilliams/fzf-cht.sh.svg)](https://GitHub.com/beauwilliams/fzf-cht.sh/issues?q=is%3Aissue+is%3Aclosed)
 
-#  fzf-cht.sh
+#  fzf-cheat.sh
 
 🔥 The ultimate cht.sh wrapper leveraging ![fzf](https://github.com/junegunn/fzf)
 
