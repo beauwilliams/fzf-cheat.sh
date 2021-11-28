@@ -30,7 +30,7 @@ chmod +x $PATH-LOCATION-YOUR-CHOOSING/fzf-cheat.sh
 ```
 
 
-**For example (easy method), install fzf-cheat.sh globally for all users**
+**For example (easy method), install fzf-cheat.sh globally for all users by placing it in /usr/local/bin**
 ```bash
 curl https://raw.githubusercontent.com/beauwilliams/fzf-cheat.sh/master/fzf-cheat.sh > /usr/local/bin/fzf-cheat.sh && chmod +x /usr/local/bin/fzf-cheat.sh
 ```
