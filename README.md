@@ -6,7 +6,7 @@
 
 #  fzf-cheat.sh
 
-🔥 The ultimate cht.sh wrapper leveraging ![fzf](https://github.com/junegunn/fzf)
+🔥 The ultimate cheat.sh wrapper leveraging ![fzf](https://github.com/junegunn/fzf)
 
 😏 Blazing fast and interactive fuzzy search cht.sh with a locally cached list
 
