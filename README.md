@@ -17,3 +17,13 @@
 # Demo
 
 ![demo](https://i.ibb.co/kSMn890/ezgif-com-gif-maker.gif)
+
+# Installation
+
+Place fzf-cheat.sh somewhere on your $PATH and make it executable
+
+```bash
+#Install it globally of all users
+curl https://raw.githubusercontent.com/beauwilliams/fzf-cheat.sh/master/fzf-cheat.sh | sudo tee /usr/local/bin/fzf-cheat.sh && chmod +x /usr/local/bin/fzf-cheat.sh
+
+```
