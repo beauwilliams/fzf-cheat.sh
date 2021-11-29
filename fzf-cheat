@@ -20,14 +20,16 @@ if [[ -z $selected ]]; then
     exit 0
 fi
 
-#Ask the user what they would like to query (with live preview, also displays preview for topics not given by cheat.sh/$selected/:list)
-query=`curl -s cht.sh/$selected/:list | fzf --print-query --print0 --reverse --height 75% --border -m --ansi --nth 2..,.. --prompt='CHEAT.SH/'$(echo $selected | tr a-z A-Z)'> ' --preview='curl -s cht.sh/'$selected'/{q}' --preview-window=right:60%`
+# Ask the user what they would like to query (with live preview, also displays preview for topics not given by cheat.sh/$selected/:list)
+query=`curl -s cht.sh/$selected/:list | fzf --print-query --reverse --height 75% --border -m --ansi --nth 2..,.. --prompt='CHEAT.SH/'$(echo $selected | tr a-z A-Z)'> ' \
+# BUG: Fix below preview logic so it displays preview when there is an available match to query, otherwise attempts to curl unmatched query
+    --preview='curl -s cht.sh/'$selected'/{1} && curl -s cht.sh/'$selected'/{q}' --preview-window=right:60%`
 
 
 
 #Retreive the cheatsheet from cht.sh
 if grep -qs "$selected" $CHT_SH_LIST_CACHE; then
-    query=`echo $query | tr ' ' '+'`
+    query=`echo $query | tr ' ' '+' | sed 's/.*+//'`
     if [[ -z $query ]]; then
         echo "curl cht.sh/$selected" & curl cht.sh/$selected
     else
