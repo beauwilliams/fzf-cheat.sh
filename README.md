@@ -16,7 +16,7 @@
 
 # Demo
 
-![demo](https://i.ibb.co/kSMn890/ezgif-com-gif-maker.gif)
+![demo](https://i.ibb.co/n3HM9zY/ezgif-com-gif-maker.gif)
 
 # Installation
 
