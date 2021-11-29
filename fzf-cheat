@@ -15,13 +15,15 @@ fi
 
 
 #Select a cht.sh cheat from the list
-selected=`cat $CHT_SH_LIST_CACHE | fzf --reverse --height 75% --border -m --ansi --nth 2..,.. --prompt='CHEAT.SH> ' --preview='curl -s cht.sh/{-1}' --preview-window=right:60%`
+selected=`cat $CHT_SH_LIST_CACHE | fzf --reverse --height 75% --border -m --ansi --nth 2..,.. --prompt='CHEAT.SH> ' --preview='curl -s cht.sh/{}' --preview-window=right:60%`
 if [[ -z $selected ]]; then
     exit 0
 fi
 
-#Ask the user what they would like to query
-read -p "Type a $selected topic to query (Empty query prints $selected summary): " query
+#Ask the user what they would like to query (with live preview, also displays preview for topics not given by cheat.sh/$selected/:list)
+query=`curl -s cht.sh/$selected/:list | fzf --print-query --print0 --reverse --height 75% --border -m --ansi --nth 2..,.. --prompt='CHEAT.SH/'$(echo $selected | tr a-z A-Z)'> ' --preview='curl -s cht.sh/'$selected'/{q}' --preview-window=right:60%`
+
+
 
 #Retreive the cheatsheet from cht.sh
 if grep -qs "$selected" $CHT_SH_LIST_CACHE; then
